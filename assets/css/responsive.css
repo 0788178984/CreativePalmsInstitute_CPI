@@ -1,0 +1,123 @@
+/* Tablet Devices */
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-link {
+        padding: 12px !important;
+    }
+
+    .dropdown-menu {
+        border: none;
+        background: var(--light-gray);
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .top-bar {
+        text-align: center;
+    }
+
+    .contact-info a,
+    .contact-info span {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .course-category {
+        padding: 20px;
+    }
+
+    .course-list {
+        margin-bottom: 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .main-footer {
+        text-align: center;
+    }
+
+    .main-footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .course-category h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta-section .btn-primary {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+} 
