@@ -1,0 +1,899 @@
+/* Requirements Page Styles */
+
+/* General Page Styles */
+.requirements-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    color: #006400;
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section-title h2:after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 3px;
+    background-color: #28a745;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Requirements Box Styles */
+.requirements-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.requirements-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.requirements-box h3 {
+    color: #006400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.requirements-list li:before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #28a745;
+}
+
+/* Document List Styles */
+.document-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.document-list li:before {
+    content: '\f15c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #006400;
+    font-size: 20px;
+}
+
+.document-list strong {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.document-list .note {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Application Process Styles */
+.process-steps {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+.process-steps:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19px;
+    width: 2px;
+    background-color: #28a745;
+    height: 100%;
+}
+
+.process-steps .step {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.process-steps .step:last-child {
+    margin-bottom: 0;
+}
+
+.process-steps .step:before {
+    content: attr(data-step);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #006400;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    left: -50px;
+    top: 0;
+    z-index: 2;
+}
+
+.process-steps .step-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.process-steps .step-content h4 {
+    color: #006400;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.process-steps .step-content p {
+    margin-bottom: 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Program Requirements Styles */
+.program-requirements .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 25px;
+}
+
+.program-requirements .nav-tabs .nav-link {
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.program-requirements .nav-tabs .nav-link:hover {
+    color: #006400;
+    border-color: transparent;
+}
+
+.program-requirements .nav-tabs .nav-link.active {
+    color: #006400;
+    background-color: transparent;
+    border-color: #006400;
+}
+
+.program-requirements .tab-content {
+    padding: 20px 0;
+}
+
+.program-requirements .tab-pane h4 {
+    color: #006400;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.program-requirements .tab-pane p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Call to Action Styles */
+.cta-section {
+    background-color: #006400;
+    padding: 60px 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+.cta-section:after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.cta-content h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-apply {
+    background-color: #fff;
+    color: #006400;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: 2px solid #fff;
+}
+
+.btn-apply:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* FAQ Styles */
+.faq-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.faq-section .card {
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-section .card-header {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0;
+}
+
+.faq-section .card-header button {
+    width: 100%;
+    text-align: left;
+    color: #006400;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+}
+
+.faq-section .card-header button:hover {
+    background-color: #f1f1f1;
+}
+
+.faq-section .card-header button:after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.faq-section .card-header button[aria-expanded="true"]:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-section .card-body {
+    padding: 20px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cta-content h3 {
+        font-size: 2rem;
+    }
+    
+    .process-steps {
+        padding-left: 35px;
+    }
+    
+    .process-steps:before {
+        left: 14px;
+    }
+    
+    .process-steps .step:before {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        left: -35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .requirements-section {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .requirements-box {
+        padding: 20px;
+    }
+    
+    .program-requirements .nav-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .cta-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-apply {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* AI Assistant Styles */
+.ai-assistant-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #006400;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 20px rgba(0, 100, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.ai-assistant-button:hover {
+    background-color: #005500;
+    transform: scale(1.05);
+}
+
+.ai-chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    z-index: 1001;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ai-chat-window.active {
+    display: flex;
+}
+
+.ai-chat-header {
+    background-color: #006400;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-chat-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ai-close-button {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ai-chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-message {
+    background-color: #f1f1f1;
+    padding: 12px 15px;
+    border-radius: 15px 15px 15px 0;
+    margin-bottom: 10px;
+    max-width: 80%;
+    align-self: flex-start;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user-message {
+    background-color: #e2f3e5;
+    padding: 12px 15px;
+    border-radius: 15px 15px 0 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    align-self: flex-end;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.ai-chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.ai-chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.ai-chat-input button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ai-chat-input button:hover {
+    background-color: #005500;
+}
+
+/* Requirements Page Specific Styles */
+
+/* Page Title Section */
+.page-title {
+    background-color: #006400;
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    background: transparent;
+    justify-content: center;
+}
+
+.breadcrumb-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Requirements Section */
+.requirements-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.requirements-section h2 {
+    color: #006400;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.requirements-section .lead {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Requirements Boxes */
+.requirements-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.requirements-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.requirements-box h3 {
+    color: #006400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: #444;
+}
+
+.requirements-list li i {
+    color: #28a745;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+/* Documents Box */
+.documents-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.documents-box h3 {
+    color: #006400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.documents-box h3 i {
+    margin-right: 10px;
+    color: #006400;
+}
+
+.document-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.document-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    color: #444;
+}
+
+.document-list li:before {
+    content: "•";
+    color: #006400;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Application Process */
+.process-steps {
+    margin-top: 30px;
+}
+
+.process-step {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #006400;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.process-step h4 {
+    color: #006400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.process-step p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Program-Specific Requirements */
+.program-requirements {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.program-requirements:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.program-requirements h4 {
+    color: #006400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.program-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-requirements li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: #444;
+}
+
+.program-requirements li:before {
+    content: "→";
+    color: #006400;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Apply CTA */
+.apply-cta {
+    background-color: #006400;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.apply-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.apply-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+.apply-cta .btn-primary {
+    background-color: #fff;
+    color: #006400;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.apply-cta .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQs */
+.accordion {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-button {
+    padding: 20px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #006400;
+    background-color: #f8f9fa;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 100, 0, 0.1);
+}
+
+.accordion-button::after {
+    background-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #555;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        padding: 40px 0;
+        margin-bottom: 30px;
+    }
+    
+    .page-title h1 {
+        font-size: 2rem;
+    }
+    
+    .requirements-section {
+        padding: 50px 0;
+    }
+    
+    .requirements-box, 
+    .documents-box, 
+    .process-step, 
+    .program-requirements {
+        margin-bottom: 20px;
+    }
+    
+    .apply-cta {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .apply-cta .btn-primary {
+        margin-top: 15px;
+    }
+    
+    .col-md-4.text-md-end {
+        text-align: center !important;
+    }
+} 

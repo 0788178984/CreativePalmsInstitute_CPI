@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notice Board - Creative Palms Business & Vocational Institute">
+    <title>Notice Board - Creative Palms</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Container - Will be populated by header-loader.js -->
+    <div id="header-container"></div>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('assets/images/notice-banner.jpg');">
+        <div class="container">
+            <h1>Notice Board</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Notice Board</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Notice Board Section -->
+    <section class="notice-board-section section-padding">
+        <div class="container">
+            <div class="section-intro text-center mb-5">
+                <h2 class="section-title">Official Announcements</h2>
+                <p>Stay updated with the latest information, announcements, and notices from Creative Palms Institute.</p>
+                <div class="search-container mt-4">
+                    <form class="notice-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search notices...">
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Notice Categories -->
+            <div class="notice-categories">
+                <ul class="nav nav-pills justify-content-center mb-5" id="noticeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All Notices</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="academic-tab" data-bs-toggle="tab" data-bs-target="#academic" type="button" role="tab" aria-controls="academic" aria-selected="false">Academic</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="admissions-tab" data-bs-toggle="tab" data-bs-target="#admissions" type="button" role="tab" aria-controls="admissions" aria-selected="false">Admissions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="exams-tab" data-bs-toggle="tab" data-bs-target="#exams" type="button" role="tab" aria-controls="exams" aria-selected="false">Examinations</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="noticeContent">
+                    <!-- All Notices -->
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="notice-list">
+                            <!-- Important Notice -->
+                            <div class="notice-item important">
+                                <div class="notice-badge">Important</div>
+                                <div class="notice-date">April 17, 2025</div>
+                                <h3 class="notice-title">Government National Merit Admission</h3>
+                                <div class="notice-content">
+                                    <p>The government has released the national merit admission list for the 2025/2026 academic year. All students who applied for the national merit scholarship should check the list at the admissions office.</p>
+                                    <p>Deadline for confirmation of admission: May 15, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 15, 2025</div>
+                                <h3 class="notice-title">Revised Academic Calendar for Semester 2, 2024/2025</h3>
+                                <div class="notice-content">
+                                    <p>Please be informed that the academic calendar for Semester 2, 2024/2025 has been revised. The following changes have been made:</p>
+                                    <ul>
+                                        <li>Mid-semester break: May 5-9, 2025</li>
+                                        <li>Submission of coursework: June 1, 2025</li>
+                                        <li>Final examinations: June 15-30, 2025</li>
+                                        <li>End of semester: July 5, 2025</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 12, 2025</div>
+                                <h3 class="notice-title">Library Extended Hours During Examination Period</h3>
+                                <div class="notice-content">
+                                    <p>To support students during the examination period, the library will extend its opening hours from May 25 to June 30, 2025.</p>
+                                    <p>Extended hours: Monday to Friday: 7:00 AM - 10:00 PM, Saturday and Sunday: 8:00 AM - 8:00 PM</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Important Notice -->
+                            <div class="notice-item important">
+                                <div class="notice-badge">Important</div>
+                                <div class="notice-date">April 10, 2025</div>
+                                <h3 class="notice-title">Fee Payment Deadline for Continuing Students</h3>
+                                <div class="notice-content">
+                                    <p>All continuing students are reminded that the deadline for paying at least 60% of the tuition fees for Semester 2, 2024/2025 is April 30, 2025.</p>
+                                    <p>Students who fail to meet this deadline will not be allowed to sit for the mid-semester examinations.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 5, 2025</div>
+                                <h3 class="notice-title">Vocational Skills Exhibition</h3>
+                                <div class="notice-content">
+                                    <p>The Department of Vocational Studies will hold its annual Skills Exhibition on April 28-29, 2025. All students from Fashion Design, Culinary Arts, and other vocational programs are encouraged to showcase their work.</p>
+                                    <p>Venue: Main Hall, Time: 9:00 AM - 5:00 PM</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 3, 2025</div>
+                                <h3 class="notice-title">Career Guidance Workshop</h3>
+                                <div class="notice-content">
+                                    <p>The Career Development Office will conduct a series of career guidance workshops for final-year students from April 17-21, 2025. The workshops will cover resume writing, job search strategies, interview skills, and networking.</p>
+                                    <p>Registration is open until April 15, 2025. Limited seats available.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 28, 2025</div>
+                                <h3 class="notice-title">Student ID Card Replacement</h3>
+                                <div class="notice-content">
+                                    <p>Students who have lost or damaged their ID cards can apply for replacements at the Registry Office from April 3-7, 2025. A replacement fee of UGX 25,000 applies.</p>
+                                    <p>Required documents: Application letter, police report (for lost cards), and receipt of payment.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 25, 2025</div>
+                                <h3 class="notice-title">New Short Courses Announced</h3>
+                                <div class="notice-content">
+                                    <p>The Institute is pleased to announce the introduction of two new short courses starting May 2025:</p>
+                                    <ul>
+                                        <li>Mobile App Development (10 weeks)</li>
+                                        <li>Digital Marketing and SEO (8 weeks)</li>
+                                    </ul>
+                                    <p>Applications are now open. Early bird discounts available until April 15, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="pagination-container mt-5">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Academic Notices -->
+                    <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                        <div class="notice-list">
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 15, 2025</div>
+                                <h3 class="notice-title">Revised Academic Calendar for Semester 2, 2024/2025</h3>
+                                <div class="notice-content">
+                                    <p>Please be informed that the academic calendar for Semester 2, 2024/2025 has been revised. The following changes have been made:</p>
+                                    <ul>
+                                        <li>Mid-semester break: May 5-9, 2025</li>
+                                        <li>Submission of coursework: June 1, 2025</li>
+                                        <li>Final examinations: June 15-30, 2025</li>
+                                        <li>End of semester: July 5, 2025</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 20, 2025</div>
+                                <h3 class="notice-title">Academic Excellence Awards Nominations</h3>
+                                <div class="notice-content">
+                                    <p>Nominations for the annual Academic Excellence Awards are now open. Students who have demonstrated outstanding academic performance, research, or innovation are eligible for nomination.</p>
+                                    <p>Deadline for nominations: April 30, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 15, 2025</div>
+                                <h3 class="notice-title">Academic Advisor Consultations</h3>
+                                <div class="notice-content">
+                                    <p>All students are encouraged to meet with their academic advisors between March 25-April 10, 2025 to discuss their academic progress and plan for the next semester.</p>
+                                    <p>Please schedule appointments through the online booking system.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admissions Notices -->
+                    <div class="tab-pane fade" id="admissions" role="tabpanel" aria-labelledby="admissions-tab">
+                        <div class="notice-list">
+                            <!-- Important Notice -->
+                            <div class="notice-item important">
+                                <div class="notice-badge">Important</div>
+                                <div class="notice-date">April 17, 2025</div>
+                                <h3 class="notice-title">Government National Merit Admission</h3>
+                                <div class="notice-content">
+                                    <p>The government has released the national merit admission list for the 2025/2026 academic year. All students who applied for the national merit scholarship should check the list at the admissions office.</p>
+                                    <p>Deadline for confirmation of admission: May 15, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 25, 2025</div>
+                                <h3 class="notice-title">New Short Courses Announced</h3>
+                                <div class="notice-content">
+                                    <p>The Institute is pleased to announce the introduction of two new short courses starting May 2025:</p>
+                                    <ul>
+                                        <li>Mobile App Development (10 weeks)</li>
+                                        <li>Digital Marketing and SEO (8 weeks)</li>
+                                    </ul>
+                                    <p>Applications are now open. Early bird discounts available until April 15, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 10, 2025</div>
+                                <h3 class="notice-title">Applications for 2025/2026 Academic Year</h3>
+                                <div class="notice-content">
+                                    <p>Applications for admission to all programs for the 2025/2026 academic year are now open. The deadline for submission of applications is May 31, 2025.</p>
+                                    <p>Application forms can be downloaded from our website or collected from the Admissions Office.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Examinations Notices -->
+                    <div class="tab-pane fade" id="exams" role="tabpanel" aria-labelledby="exams-tab">
+                        <div class="notice-list">
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 15, 2025</div>
+                                <h3 class="notice-title">Revised Academic Calendar for Semester 2, 2024/2025</h3>
+                                <div class="notice-content">
+                                    <p>Please be informed that the academic calendar for Semester 2, 2024/2025 has been revised. The following changes have been made:</p>
+                                    <ul>
+                                        <li>Mid-semester break: May 5-9, 2025</li>
+                                        <li>Submission of coursework: June 1, 2025</li>
+                                        <li>Final examinations: June 15-30, 2025</li>
+                                        <li>End of semester: July 5, 2025</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 5, 2025</div>
+                                <h3 class="notice-title">Examination Regulations Reminder</h3>
+                                <div class="notice-content">
+                                    <p>All students are reminded to familiarize themselves with the examination regulations of the Institute. Special attention should be paid to the following:</p>
+                                    <ul>
+                                        <li>Students must present their valid student ID cards to enter the examination room</li>
+                                        <li>Use of unauthorized materials is strictly prohibited</li>
+                                        <li>Mobile phones and electronic devices must be switched off and stored away</li>
+                                        <li>Students arriving more than 30 minutes late will not be allowed to sit for the examination</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">February 28, 2025</div>
+                                <h3 class="notice-title">Mid-Semester Examination Timetable</h3>
+                                <div class="notice-content">
+                                    <p>The mid-semester examination timetable for Semester 2, 2024/2025 has been released. Examinations will be held from April 17-24, 2025.</p>
+                                    <p>Students are advised to check the timetable carefully and report any clashes to the Examinations Office immediately.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Notices -->
+                    <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                        <div class="notice-list">
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 5, 2025</div>
+                                <h3 class="notice-title">Vocational Skills Exhibition</h3>
+                                <div class="notice-content">
+                                    <p>The Department of Vocational Studies will hold its annual Skills Exhibition on April 28-29, 2025. All students from Fashion Design, Culinary Arts, and other vocational programs are encouraged to showcase their work.</p>
+                                    <p>Venue: Main Hall, Time: 9:00 AM - 5:00 PM</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">April 3, 2025</div>
+                                <h3 class="notice-title">Career Guidance Workshop</h3>
+                                <div class="notice-content">
+                                    <p>The Career Development Office will conduct a series of career guidance workshops for final-year students from April 17-21, 2025. The workshops will cover resume writing, job search strategies, interview skills, and networking.</p>
+                                    <p>Registration is open until April 15, 2025. Limited seats available.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+
+                            <!-- Regular Notice -->
+                            <div class="notice-item">
+                                <div class="notice-date">March 15, 2025</div>
+                                <h3 class="notice-title">Cultural Day Celebration</h3>
+                                <div class="notice-content">
+                                    <p>Creative Palms Institute will celebrate its annual Cultural Day on April 25, 2025. The event will showcase the rich cultural diversity of our student body through music, dance, food, and traditional attire.</p>
+                                    <p>Students interested in participating should register with the Cultural Committee by April 10, 2025.</p>
+                                </div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p>Subscribe to our notification service to receive the latest notices and announcements directly to your email.</p>
+                    <form class="subscribe-form mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container - Will be populated by footer-loader.js -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+</body>
+</html> 

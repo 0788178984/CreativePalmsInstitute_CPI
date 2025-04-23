@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - Creative Palms Business & Vocational Institute</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Creative Palms Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="national-certificate.html">Certificate</a></li>
+                    <li><a href="national-diploma.html">Diploma</a></li>
+                    <li><a href="scholarships.html">Scholarships</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="guild.html">Guild</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner apply-banner">
+        <div class="container">
+            <h1>Apply Now</h1>
+            <p>Take the first step toward your future career with Creative Palms Institute</p>
+        </div>
+    </section>
+
+    <section class="application-process">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Application Process</h2>
+                <p>Thank you for your interest in joining Creative Palms Business & Vocational Institute. Our application process is designed to be straightforward and supportive. Follow the steps below to begin your journey with us.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Program</h3>
+                        <p>Select from our National Certificate Programs, National Diploma Programs, Short Courses, or Vocational Courses based on your interests and career goals.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Complete Application Form</h3>
+                        <p>Fill out the application form below with accurate personal and academic information.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Submit Supporting Documents</h3>
+                        <p>Prepare and upload required documents, including academic certificates, identification, and passport-sized photographs.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Application Review</h3>
+                        <p>Our admissions team will review your application and contact you regarding your application status.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Admission Decision</h3>
+                        <p>Receive your admission decision and, if accepted, follow the instructions for enrollment and fee payment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-form-section">
+        <div class="container">
+            <h2>Application Form</h2>
+            <p>Please fill out all required fields in the application form below. Fields marked with * are mandatory.</p>
+            
+            <form class="application-form" action="submit_application.php" method="post" enctype="multipart/form-data">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="address">Physical Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Educational Background</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="education">Highest Level of Education *</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select Education Level</option>
+                                <option value="p7">P7 (Primary School)</option>
+                                <option value="o-level">O-Level (S4)</option>
+                                <option value="a-level">A-Level (S6)</option>
+                                <option value="certificate">Certificate</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="degree">Bachelor's Degree</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="school">Name of School/Institution *</label>
+                            <input type="text" id="school" name="school" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="completionYear">Year of Completion *</label>
+                            <input type="text" id="completionYear" name="completionYear" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="certificate">Upload Certificate/Result Slip *</label>
+                            <input type="file" id="certificate" name="certificate" required>
+                            <small>Accepted formats: PDF, JPG, PNG (Max size: 2MB)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Program Selection</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="programType">Program Type *</label>
+                            <select id="programType" name="programType" required>
+                                <option value="">Select Program Type</option>
+                                <option value="certificate">National Certificate (2 Years)</option>
+                                <option value="diploma">National Diploma (2 Years)</option>
+                                <option value="short">Short Course (1 Month)</option>
+                                <option value="vocational">Vocational Course (6 Months)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="specificProgram">Specific Program *</label>
+                            <select id="specificProgram" name="specificProgram" required>
+                                <option value="">Select Specific Program</option>
+                                <!-- Options will be populated dynamically based on Program Type selection -->
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="intake">Preferred Intake *</label>
+                            <select id="intake" name="intake" required>
+                                <option value="">Select Intake</option>
+                                <option value="jan">January Intake</option>
+                                <option value="may">May Intake</option>
+                                <option value="sept">September Intake</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="studyMode">Study Mode *</label>
+                            <select id="studyMode" name="studyMode" required>
+                                <option value="">Select Study Mode</option>
+                                <option value="fulltime">Full-time</option>
+                                <option value="parttime">Part-time</option>
+                                <option value="weekend">Weekend</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Additional Information</h3>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="scholarshipInterest">Are you interested in applying for a scholarship?</label>
+                            <select id="scholarshipInterest" name="scholarshipInterest">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="howHeard">How did you hear about Creative Palms Institute? *</label>
+                            <select id="howHeard" name="howHeard" required>
+                                <option value="">Select Option</option>
+                                <option value="website">Website</option>
+                                <option value="socialMedia">Social Media</option>
+                                <option value="friend">Friend/Family</option>
+                                <option value="newspaper">Newspaper</option>
+                                <option value="radio">Radio</option>
+                                <option value="tv">Television</option>
+                                <option value="event">Educational Fair/Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="additionalInfo">Additional Information (Optional)</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="termsAgreed" name="termsAgreed" required>
+                                <label for="termsAgreed">I confirm that the information provided is accurate and complete. I understand that providing false information may result in the cancellation of my application or enrollment. *</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="application-help">
+        <div class="container">
+            <h2>Need Help with Your Application?</h2>
+            <p>If you have any questions about the application process or need assistance completing your application, our admissions team is here to help.</p>
+            <div class="contact-options">
+                <div class="contact-option">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>0702491818 / 0782307623</p>
+                </div>
+                <div class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>admissions@creativepalms.ac.ug</p>
+                </div>
+                <div class="contact-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>Fortportal City, Opp. Kitumba Mosque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Creative Palms Logo">
+                    <p>Creative Palms Business & Vocational Institute</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="national-certificate.html">Certificate Programs</a></li>
+                        <li><a href="national-diploma.html">Diploma Programs</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fortportal City, Opp. Kitumba Mosque</p>
+                    <p><i class="fas fa-phone-alt"></i> 0702491818 / 0782307623</p>
+                    <p><i class="fas fa-envelope"></i> info@creativepalms.ac.ug</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creative Palms Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+    <script>
+        // Dynamic program selection based on program type
+        document.getElementById('programType').addEventListener('change', function() {
+            const programType = this.value;
+            const specificProgram = document.getElementById('specificProgram');
+            
+            // Clear existing options
+            specificProgram.innerHTML = '<option value="">Select Specific Program</option>';
+            
+            if (programType === 'certificate') {
+                const certificatePrograms = [
+                    'Accounting and Finance',
+                    'Business Administration',
+                    'Records and Information Management',
+                    'Hotel and Institutional Catering',
+                    'Nursery Teaching-ECD',
+                    'Information & Computer Technology',
+                    'National Certificate in Tourism'
+                ];
+                
+                certificatePrograms.forEach(program => {
+                    const option = document.createElement('option');
+                    option.value = program.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = program;
+                    specificProgram.appendChild(option);
+                });
+            } else if (programType === 'diploma') {
+                const diplomaPrograms = [
+                    'National Diploma in Accountancy',
+                    'Hotel & Institutional Catering',
+                    'Business Administration',
+                    'Secretarial & Office Administration',
+                    'Records & Information Management',
+                    'Information & Computer Technology'
+                ];
+                
+                diplomaPrograms.forEach(program => {
+                    const option = document.createElement('option');
+                    option.value = program.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = program;
+                    specificProgram.appendChild(option);
+                });
+            } else if (programType === 'short') {
+                const shortCourses = [
+                    'Driving + permit',
+                    'Language at basic level',
+                    'NGO Management, Basic computer',
+                    'Financial management',
+                    'Public Administration & Public speaking',
+                    'Records management',
+                    'Soap and Shoe making',
+                    'Tourist guide, Cookery'
+                ];
+                
+                shortCourses.forEach(course => {
+                    const option = document.createElement('option');
+                    option.value = course.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = course;
+                    specificProgram.appendChild(option);
+                });
+            } else if (programType === 'vocational') {
+                const vocationalCourses = [
+                    'Pottery and Ceramics',
+                    'Tailoring and Garment cutting',
+                    'Fashion Design and knitting',
+                    'Hairdressing and Cosmetology',
+                    'Motor Vehicle Mechanics',
+                    'Electrical installation'
+                ];
+                
+                vocationalCourses.forEach(course => {
+                    const option = document.createElement('option');
+                    option.value = course.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = course;
+                    specificProgram.appendChild(option);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -20,21 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header (Same as index.html) -->
-    <header class="main-header">
-        <!-- ... Copy header content from index.html ... -->
-    </header>
+    <!-- Header Container - Will be populated by header-loader.js -->
+    <div id="header-container"></div>
 
-    <!-- Page Title -->
-    <section class="page-title">
+    <section class="page-banner news-banner">
         <div class="container">
             <h1>News & Updates</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">News</li>
-                </ol>
-            </nav>
+            <p>Stay informed about the latest happenings at Creative Palms Institute</p>
         </div>
     </section>
 
@@ -195,21 +187,13 @@
         </div>
     </section>
 
-    <!-- Footer (Same as index.html) -->
-    <footer class="main-footer">
-        <!-- ... Copy footer content from index.html ... -->
-    </footer>
-
-    <!-- AI Assistant -->
-    <div class="ai-assistant-icon" id="aiAssistantIcon">
-        <i class="fas fa-robot"></i>
-    </div>
-    <div class="ai-assistant-chat" id="aiAssistantChat">
-        <!-- ... Copy AI Assistant content from index.html ... -->
-    </div>
+    <!-- Footer Container - Will be populated by footer-loader.js -->
+    <div id="footer-container"></div>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
 </body>
 </html> 

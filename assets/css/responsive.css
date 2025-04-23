@@ -27,12 +27,60 @@
         border: none;
         background: var(--light-gray);
     }
+    
+    /* Hamburger menu visibility is now controlled in style.css */
+    .burger {
+        top: 15px;
+        right: 15px;
+    }
+    
+    /* Ensure logo text is visible */
+    .logo-text {
+        display: block !important;
+    }
+    
+    .logo-text h1 {
+        font-size: 20px;
+        white-space: nowrap;
+        display: block;
+    }
+    
+    /* News Page Responsive - Tablet */
+    .news-section {
+        padding: 50px 0;
+    }
+    
+    .news-item.featured img {
+        height: 250px;
+    }
+    
+    .sidebar-widget {
+        padding: 20px;
+    }
 }
 
 /* Mobile Devices */
 @media (max-width: 767px) {
     .top-bar {
         text-align: center;
+    }
+
+    /* Adjust hamburger position for mobile */
+    .burger {
+        top: 10px;
+        right: 10px;
+        z-index: 1050;
+    }
+    
+    /* Improve logo display on mobile */
+    .logo {
+        max-width: 80%;
+        margin-right: 0;
+    }
+    
+    .logo-text h1 {
+        font-size: 18px;
+        white-space: normal; /* Allow wrapping on very small screens */
     }
 
     .contact-info a,
@@ -92,12 +140,119 @@
         justify-content: center;
         margin-top: 20px;
     }
+    
+    /* News Page Responsive - Mobile */
+    .news-section {
+        padding: 30px 0;
+    }
+    
+    .page-banner {
+        padding: 40px 0;
+    }
+    
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .page-banner p {
+        font-size: 1rem;
+    }
+    
+    .news-item {
+        margin-bottom: 20px;
+    }
+    
+    .news-item.featured img {
+        height: 200px;
+    }
+    
+    .news-content {
+        padding: 15px;
+    }
+    
+    .news-content h2 {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+    
+    .news-meta {
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+    
+    .news-meta span {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .sidebar-widget {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar-widget h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tag {
+        margin: 0 5px 5px 0;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .recent-post {
+        flex-direction: column;
+    }
+    
+    .recent-post img {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .pagination {
+        justify-content: center;
+    }
+    
+    .pagination .page-link {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .navbar-brand img {
         height: 45px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .logo-text h1 {
+        font-size: 16px;
+    }
+
+    /* Smaller hamburger for very small screens */
+    .burger {
+        padding: 8px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .burger .line1, 
+    .burger .line2, 
+    .burger .line3 {
+        width: 22px;
+        height: 2px;
+        margin: 4px 0;
     }
 
     .hero-section h1 {
@@ -119,5 +274,41 @@
     .cta-section .btn-primary {
         padding: 12px 30px;
         font-size: 1rem;
+    }
+    
+    /* News Page Responsive - Small Mobile */
+    .page-banner h1 {
+        font-size: 1.6rem;
+    }
+    
+    .news-item.featured img {
+        height: 160px;
+    }
+    
+    .news-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .news-content p {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .news-date {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .news-date .day {
+        font-size: 1.2rem;
+    }
+    
+    .news-date .month,
+    .news-date .year {
+        font-size: 0.7rem;
     }
 } 

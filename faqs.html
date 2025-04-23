@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQs - Creative Palms Business & Vocational Institute">
+    <title>FAQs - Creative Palms</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Container - Will be populated by header-loader.js -->
+    <div id="header-container"></div>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('assets/images/faqs-banner.jpg');">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section section-padding">
+        <div class="container">
+            <div class="section-intro text-center mb-5">
+                <h2 class="section-title">Find Answers to Common Questions</h2>
+                <p>Browse through our comprehensive list of frequently asked questions to find answers to your queries about Creative Palms Institute.</p>
+                <div class="faq-search mt-4">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search FAQs...">
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="faq-categories">
+                <ul class="nav nav-pills justify-content-center mb-5" id="faqTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="admission-tab" data-bs-toggle="tab" data-bs-target="#admission" type="button" role="tab" aria-controls="admission" aria-selected="true">Admission</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="academic-tab" data-bs-toggle="tab" data-bs-target="#academic" type="button" role="tab" aria-controls="academic" aria-selected="false">Academic</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fees-tab" data-bs-toggle="tab" data-bs-target="#fees" type="button" role="tab" aria-controls="fees" aria-selected="false">Fees & Payments</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="facilities-tab" data-bs-toggle="tab" data-bs-target="#facilities" type="button" role="tab" aria-controls="facilities" aria-selected="false">Facilities</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="faqContent">
+                    <!-- Admission FAQs -->
+                    <div class="tab-pane fade show active" id="admission" role="tabpanel" aria-labelledby="admission-tab">
+                        <div class="accordion" id="admissionAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="admissionHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#admissionCollapse1" aria-expanded="true" aria-controls="admissionCollapse1">
+                                        What are the entry requirements for your programs?
+                                    </button>
+                                </h2>
+                                <div id="admissionCollapse1" class="accordion-collapse collapse show" aria-labelledby="admissionHeading1" data-bs-parent="#admissionAccordion">
+                                    <div class="accordion-body">
+                                        <p>Entry requirements vary by program. Generally, for Certificate programs, you need a minimum of O-Level with at least 5 passes. For Diploma programs, you need at least 1 principal pass at A-Level or a relevant Certificate. For short courses, there may be minimal or no formal academic requirements. Please visit our <a href="requirements.html">Entry Requirements</a> page for specific program requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="admissionHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admissionCollapse2" aria-expanded="false" aria-controls="admissionCollapse2">
+                                        When can I apply for admission?
+                                    </button>
+                                </h2>
+                                <div id="admissionCollapse2" class="accordion-collapse collapse" aria-labelledby="admissionHeading2" data-bs-parent="#admissionAccordion">
+                                    <div class="accordion-body">
+                                        <p>We have two main intake periods: January/February (Semester 1) and August/September (Semester 2). Applications typically open 3 months before the start of each semester. Short courses have multiple intakes throughout the year. Check our <a href="notice-board.html">Notice Board</a> for current application deadlines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="admissionHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admissionCollapse3" aria-expanded="false" aria-controls="admissionCollapse3">
+                                        How do I apply for admission?
+                                    </button>
+                                </h2>
+                                <div id="admissionCollapse3" class="accordion-collapse collapse" aria-labelledby="admissionHeading3" data-bs-parent="#admissionAccordion">
+                                    <div class="accordion-body">
+                                        <p>You can apply online through our website or in person at our Admissions Office. The application process involves:</p>
+                                        <ol>
+                                            <li>Obtaining and filling out an application form</li>
+                                            <li>Submitting academic documents</li>
+                                            <li>Paying the application fee</li>
+                                            <li>Attending an interview (for some programs)</li>
+                                        </ol>
+                                        <p>Visit our <a href="apply.html">How to Apply</a> page for detailed information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="admissionHeading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admissionCollapse4" aria-expanded="false" aria-controls="admissionCollapse4">
+                                        Are there any scholarships available?
+                                    </button>
+                                </h2>
+                                <div id="admissionCollapse4" class="accordion-collapse collapse" aria-labelledby="admissionHeading4" data-bs-parent="#admissionAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, Creative Palms offers several scholarship opportunities for deserving students based on academic excellence, financial need, and special talents. We also have government-sponsored slots for certain programs. For details, visit our <a href="scholarships.html">Scholarships</a> page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic FAQs -->
+                    <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                        <div class="accordion" id="academicAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="academicHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#academicCollapse1" aria-expanded="true" aria-controls="academicCollapse1">
+                                        What programs does Creative Palms offer?
+                                    </button>
+                                </h2>
+                                <div id="academicCollapse1" class="accordion-collapse collapse show" aria-labelledby="academicHeading1" data-bs-parent="#academicAccordion">
+                                    <div class="accordion-body">
+                                        <p>Creative Palms offers a wide range of programs including:</p>
+                                        <ul>
+                                            <li>National Certificate Programs (1-2 years)</li>
+                                            <li>National Diploma Programs (2-3 years)</li>
+                                            <li>Short Courses (2 weeks to 6 months)</li>
+                                            <li>Vocational Training Programs</li>
+                                        </ul>
+                                        <p>Our programs cover fields such as Business, Information Technology, Tourism & Hospitality, and various vocational skills. See our <a href="courses.html">Courses</a> page for the complete list.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="academicHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#academicCollapse2" aria-expanded="false" aria-controls="academicCollapse2">
+                                        Are your programs recognized nationally and internationally?
+                                    </button>
+                                </h2>
+                                <div id="academicCollapse2" class="accordion-collapse collapse" aria-labelledby="academicHeading2" data-bs-parent="#academicAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, all our programs are accredited by the National Council for Higher Education (NCHE) and relevant professional bodies. Our National Certificates and Diplomas are recognized throughout East Africa and beyond. Many of our graduates have successfully pursued further studies at universities worldwide or secured employment in international organizations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="academicHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#academicCollapse3" aria-expanded="false" aria-controls="academicCollapse3">
+                                        What is the language of instruction?
+                                    </button>
+                                </h2>
+                                <div id="academicCollapse3" class="accordion-collapse collapse" aria-labelledby="academicHeading3" data-bs-parent="#academicAccordion">
+                                    <div class="accordion-body">
+                                        <p>English is the primary language of instruction for all our programs. Students are expected to have a good command of English for both written and verbal communication.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="academicHeading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#academicCollapse4" aria-expanded="false" aria-controls="academicCollapse4">
+                                        What is the academic calendar like?
+                                    </button>
+                                </h2>
+                                <div id="academicCollapse4" class="accordion-collapse collapse" aria-labelledby="academicHeading4" data-bs-parent="#academicAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our academic year is divided into two semesters:</p>
+                                        <ul>
+                                            <li>Semester 1: January/February to May/June</li>
+                                            <li>Semester 2: August/September to December</li>
+                                        </ul>
+                                        <p>Each semester lasts about 17 weeks, including examination periods. Short breaks are provided between semesters and during public holidays.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fees & Payments FAQs -->
+                    <div class="tab-pane fade" id="fees" role="tabpanel" aria-labelledby="fees-tab">
+                        <div class="accordion" id="feesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="feesHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#feesCollapse1" aria-expanded="true" aria-controls="feesCollapse1">
+                                        What are the tuition fees for your programs?
+                                    </button>
+                                </h2>
+                                <div id="feesCollapse1" class="accordion-collapse collapse show" aria-labelledby="feesHeading1" data-bs-parent="#feesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Tuition fees vary by program. Generally:</p>
+                                        <ul>
+                                            <li>Certificate Programs: UGX 1,200,000 - 1,500,000 per semester</li>
+                                            <li>Diploma Programs: UGX 1,500,000 - 1,800,000 per semester</li>
+                                            <li>Short Courses: UGX 300,000 - 800,000 (total)</li>
+                                        </ul>
+                                        <p>For detailed fee structures, please visit our <a href="fees.html">Fees Structure</a> page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="feesHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#feesCollapse2" aria-expanded="false" aria-controls="feesCollapse2">
+                                        What payment options are available?
+                                    </button>
+                                </h2>
+                                <div id="feesCollapse2" class="accordion-collapse collapse" aria-labelledby="feesHeading2" data-bs-parent="#feesAccordion">
+                                    <div class="accordion-body">
+                                        <p>We offer several payment options:</p>
+                                        <ul>
+                                            <li>Bank deposit/transfer to our institutional accounts</li>
+                                            <li>Mobile money payments</li>
+                                            <li>Online payment through our student portal</li>
+                                            <li>Installment payment plans (upon approval)</li>
+                                        </ul>
+                                        <p>All payment details are provided in the admission letter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="feesHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#feesCollapse3" aria-expanded="false" aria-controls="feesCollapse3">
+                                        Is there a payment plan available?
+                                    </button>
+                                </h2>
+                                <div id="feesCollapse3" class="accordion-collapse collapse" aria-labelledby="feesHeading3" data-bs-parent="#feesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, we offer flexible payment plans. Students can pay:</p>
+                                        <ul>
+                                            <li>Full payment at the beginning of the semester (with a 5% discount)</li>
+                                            <li>60% at the beginning of the semester and 40% before mid-semester exams</li>
+                                            <li>Special installment plans can be arranged with the Finance Office on a case-by-case basis</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="feesHeading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#feesCollapse4" aria-expanded="false" aria-controls="feesCollapse4">
+                                        Are there any additional costs beyond tuition?
+                                    </button>
+                                </h2>
+                                <div id="feesCollapse4" class="accordion-collapse collapse" aria-labelledby="feesHeading4" data-bs-parent="#feesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, there are some additional costs:</p>
+                                        <ul>
+                                            <li>Registration fee (one-time): UGX 50,000</li>
+                                            <li>ID card fee: UGX 20,000</li>
+                                            <li>Development fee: UGX 100,000 per year</li>
+                                            <li>Examination fee: UGX 150,000 per semester</li>
+                                            <li>Materials and books (varies by program)</li>
+                                            <li>Practical training fees (for certain programs)</li>
+                                        </ul>
+                                        <p>All additional fees are detailed in the admission letter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities FAQs -->
+                    <div class="tab-pane fade" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
+                        <div class="accordion" id="facilitiesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="facilitiesHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#facilitiesCollapse1" aria-expanded="true" aria-controls="facilitiesCollapse1">
+                                        Does Creative Palms provide accommodation for students?
+                                    </button>
+                                </h2>
+                                <div id="facilitiesCollapse1" class="accordion-collapse collapse show" aria-labelledby="facilitiesHeading1" data-bs-parent="#facilitiesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, we have on-campus hostels for both male and female students. Our hostels are secure, well-maintained, and conveniently located within walking distance of academic buildings. Accommodation is provided on a first-come, first-served basis, so early application is recommended. We also have partnerships with off-campus accommodation providers for students who prefer alternative housing options.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="facilitiesHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilitiesCollapse2" aria-expanded="false" aria-controls="facilitiesCollapse2">
+                                        What computing facilities are available?
+                                    </button>
+                                </h2>
+                                <div id="facilitiesCollapse2" class="accordion-collapse collapse" aria-labelledby="facilitiesHeading2" data-bs-parent="#facilitiesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Creative Palms has modern computing facilities including:</p>
+                                        <ul>
+                                            <li>Multiple computer laboratories with high-speed internet</li>
+                                            <li>Specialized software for different programs</li>
+                                            <li>Campus-wide Wi-Fi access</li>
+                                            <li>Printing and scanning services</li>
+                                            <li>Technical support staff</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="facilitiesHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilitiesCollapse3" aria-expanded="false" aria-controls="facilitiesCollapse3">
+                                        What library resources are available for students?
+                                    </button>
+                                </h2>
+                                <div id="facilitiesCollapse3" class="accordion-collapse collapse" aria-labelledby="facilitiesHeading3" data-bs-parent="#facilitiesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our library provides comprehensive resources:</p>
+                                        <ul>
+                                            <li>Extensive collection of textbooks, reference materials, and journals</li>
+                                            <li>E-library with access to academic databases</li>
+                                            <li>Quiet study spaces and group discussion rooms</li>
+                                            <li>Trained librarians to assist with research</li>
+                                            <li>Extended opening hours during examination periods</li>
+                                        </ul>
+                                        <p>For more information, visit our <a href="library.html">Library</a> page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="facilitiesHeading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilitiesCollapse4" aria-expanded="false" aria-controls="facilitiesCollapse4">
+                                        Are there sports and recreational facilities?
+                                    </button>
+                                </h2>
+                                <div id="facilitiesCollapse4" class="accordion-collapse collapse" aria-labelledby="facilitiesHeading4" data-bs-parent="#facilitiesAccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, we have a range of sports and recreational facilities:</p>
+                                        <ul>
+                                            <li>Multi-purpose sports field (football, athletics)</li>
+                                            <li>Basketball and volleyball courts</li>
+                                            <li>Indoor games (chess, table tennis, pool)</li>
+                                            <li>Student recreation center</li>
+                                            <li>Outdoor relaxation areas</li>
+                                        </ul>
+                                        <p>We also have active sports teams that participate in inter-collegiate competitions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="faq-contact section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="section-title">Still Have Questions?</h2>
+                    <p>If you couldn't find the answer to your question, please feel free to contact us. Our support team is here to help.</p>
+                    <div class="contact-options mt-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <h3>Call Us</h3>
+                                    <p>0702491818 | 0782307623</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fas fa-envelope"></i>
+                                    <h3>Email Us</h3>
+                                    <p>info@creativepalms.ac.ug</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fas fa-comments"></i>
+                                    <h3>Live Chat</h3>
+                                    <p>Available 8AM - 5PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary mt-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container - Will be populated by footer-loader.js -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+</body>
+</html> 

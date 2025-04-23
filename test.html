@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page - Creative Palms</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Debug Information -->
+    <div id="debug-info" style="padding: 20px; background-color: #f8f9fa; border: 1px solid #ddd; margin: 20px;">
+        <h2>Debug Information</h2>
+        <div id="loader-status">Checking loaders...</div>
+        <div id="js-files-status">Checking JS files...</div>
+        <div id="header-container-status">Checking header container...</div>
+        <div id="footer-container-status">Checking footer container...</div>
+    </div>
+
+    <!-- Header Container -->
+    <div id="header-container"></div>
+    
+    <!-- Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1>Test Page</h1>
+            <p>This is a test page to debug the header and footer components loading.</p>
+        </div>
+    </section>
+    
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Debug Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check loaders
+            setTimeout(function() {
+                const headerLoaderScript = document.querySelector('script[src="assets/js/header-loader.js"]');
+                const footerLoaderScript = document.querySelector('script[src="assets/js/footer-loader.js"]');
+                
+                document.getElementById('loader-status').innerHTML = 
+                    `Header Loader Script: ${headerLoaderScript ? 'Found' : 'Not Found'}<br>` +
+                    `Footer Loader Script: ${footerLoaderScript ? 'Found' : 'Not Found'}`;
+                
+                // Check if JS files exist by making a fetch request
+                Promise.all([
+                    fetch('assets/js/header-loader.js').then(response => response.ok ? 'Found' : 'Not Found').catch(() => 'Error'),
+                    fetch('assets/js/footer-loader.js').then(response => response.ok ? 'Found' : 'Not Found').catch(() => 'Error'),
+                    fetch('header.html').then(response => response.ok ? 'Found' : 'Not Found').catch(() => 'Error'),
+                    fetch('footer.html').then(response => response.ok ? 'Found' : 'Not Found').catch(() => 'Error')
+                ]).then(results => {
+                    document.getElementById('js-files-status').innerHTML = 
+                        `header-loader.js: ${results[0]}<br>` +
+                        `footer-loader.js: ${results[1]}<br>` +
+                        `header.html: ${results[2]}<br>` +
+                        `footer.html: ${results[3]}`;
+                });
+                
+                // Check header container
+                const headerContainer = document.getElementById('header-container');
+                document.getElementById('header-container-status').innerHTML = 
+                    `Header Container: ${headerContainer ? 'Found' : 'Not Found'}<br>` +
+                    `Content: ${headerContainer && headerContainer.innerHTML ? 'Has Content' : 'Empty'}`;
+                
+                // Check footer container
+                const footerContainer = document.getElementById('footer-container');
+                document.getElementById('footer-container-status').innerHTML = 
+                    `Footer Container: ${footerContainer ? 'Found' : 'Not Found'}<br>` +
+                    `Content: ${footerContainer && footerContainer.innerHTML ? 'Has Content' : 'Empty'}`;
+            }, 2000);
+        });
+    </script>
+    
+    <!-- Main Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+</body>
+</html> 
