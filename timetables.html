@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timetables - Creative Palms Business & Vocational Institute">
+    <title>Timetables - Creative Palms</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Container - Will be populated by header-loader.js -->
+    <div id="header-container"></div>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('assets/images/timetable-banner.jpg');">
+        <div class="container">
+            <h1>Class Timetables</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Timetables</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Timetables Section -->
+    <section class="timetables-section section-padding">
+        <div class="container">
+            <div class="section-intro text-center mb-5">
+                <h2 class="section-title">Academic Timetables</h2>
+                <p>Access your course timetables for the current semester. Please note that timetables are subject to change, so check regularly for updates.</p>
+            </div>
+
+            <!-- Timetable Categories -->
+            <div class="timetable-categories">
+                <ul class="nav nav-tabs justify-content-center mb-5" id="timetableTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="certificate-tab" data-bs-toggle="tab" data-bs-target="#certificate" type="button" role="tab" aria-controls="certificate" aria-selected="true">National Certificate</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="diploma-tab" data-bs-toggle="tab" data-bs-target="#diploma" type="button" role="tab" aria-controls="diploma" aria-selected="false">National Diploma</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="short-tab" data-bs-toggle="tab" data-bs-target="#short" type="button" role="tab" aria-controls="short" aria-selected="false">Short Courses</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vocational-tab" data-bs-toggle="tab" data-bs-target="#vocational" type="button" role="tab" aria-controls="vocational" aria-selected="false">Vocational Programs</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="timetableContent">
+                    <!-- National Certificate Timetables -->
+                    <div class="tab-pane fade show active" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Business Studies</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Information Technology</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Tourism & Hospitality</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- National Diploma Timetables -->
+                    <div class="tab-pane fade" id="diploma" role="tabpanel" aria-labelledby="diploma-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Business Management</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Software Engineering</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Short Courses Timetables -->
+                    <div class="tab-pane fade" id="short" role="tabpanel" aria-labelledby="short-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Computer Applications</h3>
+                                        <span class="semester">April - June 2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday, Wednesday, Friday, 9:00 AM - 12:00 PM</p>
+                                        <p>Last Updated: April 1, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Graphics Design</h3>
+                                        <span class="semester">April - June 2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Tuesday, Thursday, 2:00 PM - 5:00 PM</p>
+                                        <p>Last Updated: April 1, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vocational Programs Timetables -->
+                    <div class="tab-pane fade" id="vocational" role="tabpanel" aria-labelledby="vocational-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Tailoring & Fashion Design</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="timetable-card">
+                                    <div class="card-header">
+                                        <h3>Culinary Arts</h3>
+                                        <span class="semester">Semester 2, 2024/2025</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Classes: Monday to Friday, 8:00 AM - 5:00 PM</p>
+                                        <p>Last Updated: April 15, 2025</p>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Examination Timetables -->
+            <div class="examination-timetables mt-5">
+                <h2 class="section-title text-center mb-4">Examination Timetables</h2>
+                <div class="alert alert-info">
+                    <h4><i class="fas fa-info-circle"></i> Upcoming Examinations</h4>
+                    <p>Final examinations for the current semester will be held from June 1 to June 15, 2025. Detailed examination timetables will be available two weeks before the examination period.</p>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="timetable-card">
+                            <div class="card-header">
+                                <h3>National Certificate Programs</h3>
+                                <span class="semester">Final Exams, Semester 2, 2024/2025</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Coming Soon</p>
+                                <p>Will be available by: May 15, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="timetable-card">
+                            <div class="card-header">
+                                <h3>National Diploma Programs</h3>
+                                <span class="semester">Final Exams, Semester 2, 2024/2025</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Coming Soon</p>
+                                <p>Will be available by: May 15, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container - Will be populated by footer-loader.js -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+</body>
+</html> 
