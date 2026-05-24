@@ -1,3 +1,20 @@
+// Preconnect for faster font/CDN loading (runs once per page)
+(function () {
+    if (document.querySelector('link[data-cpi-preconnect]')) return;
+    [
+        ['https://fonts.googleapis.com', false],
+        ['https://fonts.gstatic.com', true],
+        ['https://cdn.jsdelivr.net', false]
+    ].forEach(function (pair) {
+        var link = document.createElement('link');
+        link.rel = 'preconnect';
+        link.href = pair[0];
+        link.setAttribute('data-cpi-preconnect', '1');
+        if (pair[1]) link.crossOrigin = 'anonymous';
+        document.head.appendChild(link);
+    });
+})();
+
 // Header loader script
 document.addEventListener('DOMContentLoaded', function() {
     // Function to load header

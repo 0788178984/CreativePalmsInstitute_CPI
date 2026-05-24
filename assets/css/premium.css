@@ -749,6 +749,17 @@
     font-weight: 600;
 }
 
+.cta-band .btn-outline-primary {
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-color);
+    background: #fff;
+}
+
+.cta-band .btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
 /* ─── Program overview blocks ─── */
 .program-overview,
 .intro-content {
@@ -920,28 +931,7 @@
     margin-bottom: 20px;
 }
 
-.cta-section {
-    padding: 56px 0;
-    text-align: center;
-    background: linear-gradient(135deg, var(--primary-light), #fff);
-}
-
-.cta-section .cta-btn {
-    display: inline-block;
-    padding: 14px 36px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-    color: #fff;
-    border-radius: 50px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 16px rgba(13, 110, 63, 0.35);
-    transition: var(--transition);
-}
-
-.cta-section .cta-btn:hover {
-    transform: translateY(-2px);
-    color: #fff;
-}
+/* CTA band styles consolidated in style.css */
 
 /* ─── Requirements & documents ─── */
 .requirements-box {
