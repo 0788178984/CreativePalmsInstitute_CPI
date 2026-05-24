@@ -3020,4 +3020,74 @@ a {
     position: relative;
 }
 
-@import url('premium.css'); 
+/* Program overview key-details (also in premium.css — kept here so layout never breaks) */
+.key-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.detail-item {
+    background: var(--surface, #fff);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: var(--radius-md, 12px);
+    padding: 24px 16px;
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(15, 23, 42, 0.08));
+    transition: 0.25s ease;
+}
+
+.detail-item:hover {
+    box-shadow: var(--shadow-md, 0 8px 24px rgba(15, 23, 42, 0.1));
+    border-color: rgba(13, 110, 63, 0.3);
+    transform: translateY(-4px);
+}
+
+.detail-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color, #0d6e3f);
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light, #e8f5ee);
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.detail-item h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary-dark, #084d2c);
+    margin: 0 0 6px;
+}
+
+.detail-item p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color, #1e293b);
+    margin: 0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+    .key-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .key-details {
+        grid-template-columns: 1fr;
+    }
+} 
