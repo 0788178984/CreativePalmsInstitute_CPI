@@ -89,6 +89,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Load the footer
+    function loadSiteInit() {
+        if (document.querySelector('script[data-site-init]')) return;
+        var script = document.createElement('script');
+        script.setAttribute('data-site-init', 'true');
+        var cssLink = document.querySelector('link[href*="assets/css/style.css"]');
+        script.src = cssLink
+            ? cssLink.getAttribute('href').replace('css/style.css', 'js/site-init.js')
+            : 'assets/js/site-init.js';
+        document.body.appendChild(script);
+    }
+
+    loadSiteInit();
     loadFooter();
 }); 
