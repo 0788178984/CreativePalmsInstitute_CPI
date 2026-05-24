@@ -230,23 +230,29 @@ document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(link => {
     });
 });
 
-$(document).ready(function() {
-    // Initialize Owl Carousel
-    $('.hero-slider').owlCarousel({
+function initHeroSlider() {
+    var $slider = $('.hero-slider');
+    if (!$slider.length || typeof $.fn.owlCarousel === 'undefined' || $slider.hasClass('owl-loaded')) {
+        return;
+    }
+
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    $slider.owlCarousel({
         items: 1,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 6000,
+        margin: 0,
+        autoplay: !prefersReducedMotion,
+        autoplayTimeout: 5500,
+        autoplaySpeed: 900,
         autoplayHoverPause: true,
-        smartSpeed: 1000,
+        smartSpeed: 900,
         nav: true,
         dots: true,
         navText: [
             '<i class="fas fa-chevron-left"></i>',
             '<i class="fas fa-chevron-right"></i>'
         ],
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
         responsive: {
             0: {
                 nav: false
@@ -256,6 +262,14 @@ $(document).ready(function() {
             }
         }
     });
+
+    if (!prefersReducedMotion) {
+        $slider.trigger('play.owl.autoplay', [5500]);
+    }
+}
+
+$(document).ready(function() {
+    initHeroSlider();
 
     // Mobile Menu Toggle
     $('.mobile-menu-toggle').click(function() {
@@ -361,26 +375,6 @@ window.addEventListener('scroll', function() {
         if (nav) nav.classList.add('header-scroll-down');
     } else {
         if (nav) nav.classList.remove('header-scroll-down');
-    }
-});
-
-// Initialize Owl Carousel if it exists
-document.addEventListener('DOMContentLoaded', function() {
-    if (typeof $.fn.owlCarousel !== 'undefined') {
-        $('.hero-slider').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            nav: true,
-            dots: true,
-            animateOut: 'fadeOut',
-            navText: [
-                '<i class="fas fa-chevron-left"></i>',
-                '<i class="fas fa-chevron-right"></i>'
-            ],
-        });
     }
 });
 

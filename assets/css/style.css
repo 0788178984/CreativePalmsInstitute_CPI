@@ -355,6 +355,19 @@ a {
     position: relative;
 }
 
+.hero-slider.owl-carousel {
+    display: block;
+}
+
+.hero-slider .owl-stage-outer {
+    overflow: hidden;
+}
+
+.hero-slider .owl-item {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 .slider-item {
     height: 600px;
     background-size: cover;
