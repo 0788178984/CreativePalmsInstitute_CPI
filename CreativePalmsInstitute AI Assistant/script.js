@@ -64,7 +64,7 @@ const instituteInfo = {
         location: "in Fortportal City, Opposite Kitumba Mosque"
     },
     registration: {
-        intake: "2025 April Intake",
+        intake: "August 2026 Intake",
         status: "Registration is ongoing"
     }
 };

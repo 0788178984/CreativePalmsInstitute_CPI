@@ -78,4 +78,4 @@ For technical support or content updates, contact:
 
 ## License
 
-All rights reserved © 2025 Creative Palms Business & Vocational Institute 
+All rights reserved © 2026 Creative Palms Business & Vocational Institute 

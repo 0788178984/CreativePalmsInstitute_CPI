@@ -3,7 +3,18 @@
  * Styles all shared components across every page.
  */
 
-/* ─── Page hero (inner pages) ─── */
+/* ─── Inner page spacing (no banner / breadcrumb bar) ─── */
+.section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#header-container + section,
+#header-container + main > section:first-child {
+    padding-top: 2.75rem;
+}
+
+/* ─── Page hero (inner pages) — kept for legacy; banners removed from HTML ─── */
 .page-title,
 .page-banner,
 .course-banner {

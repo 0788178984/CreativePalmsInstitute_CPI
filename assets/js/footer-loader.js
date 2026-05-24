@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Provide fallback
                 const footerContainer = document.getElementById('footer-container');
                 if (footerContainer) {
-                    footerContainer.innerHTML = '<div class="container py-3 text-center">&copy; 2025 Creative Palms Business & Vocational Institute. All rights reserved.</div>';
+                    footerContainer.innerHTML = '<div class="container py-3 text-center">&copy; 2026 Creative Palms Business & Vocational Institute. All rights reserved.</div>';
                 }
             });
     }
